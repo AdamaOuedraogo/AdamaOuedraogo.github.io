@@ -1,6 +1,4 @@
 /* Définition des polices personnalisées */
-
-
 @font-face {
     font-family: 'open_sanslight';
     src: url('fonts/OpenSans-Light-webfont.eot');
@@ -18,12 +16,10 @@
 
 /* Eléments principaux de la page */
 
-
 body{
     /* font-family:'open_sanslight',Arial, Helvetica, sans-serif; */
     font-family: 'Source Serif Pro';
-   
-   
+
 }
 
 #cv-page{
@@ -31,8 +27,7 @@ body{
     background-color: #0C2C3B;
     border-style: inset;
     margin: auto;
-    height: 1200px;
-    
+    height: 1200px;  
 
 }
 
@@ -57,26 +52,45 @@ body{
   
 }
 .header h1{
-   
     margin-bottom: 0px;
-    
-   
-
 }
 
 
 /*content*/
 
 
+/*Formation*/
+
+.formation{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 320px;
+    color: white;
+    
+}
+
+
+
+.formation span,p{
+    font-size: 16px
+}
+.formation p{
+    text-align:center ;
+}
+.formation span{
+    font-weight:bold;
+    padding-right: 30px;
+}
+
+.formation hr{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Solid border */
 hr.solid {
-    border-top: 3px solid #bbb;
+    border-top: 0.5px solid white;
   }
-
-
-
-
 
 
 
@@ -109,16 +123,13 @@ nav h2{
 
 
 .nav{
-
     display: block;
     /* background-image: url('../images/bak.png'); */
     background-color: #072330;
     position: absolute;
     padding: 10px;
     color: white    ;
-    width: 20%;
-    font-size: 0.9em;
-    
+    width: 20%;  
 }
 
 nav p {
@@ -143,15 +154,7 @@ nav p {
 
 
 
-.formation{
-    display: flex;
-    position: relative;
-    margin-left: 320px;
- 
- 
 
-
-}
 
 ul {
     list-style-type: none;
