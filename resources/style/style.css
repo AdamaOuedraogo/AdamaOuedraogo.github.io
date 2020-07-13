@@ -77,6 +77,7 @@ hr.Developpeur{
     display:flex;
     flex-flow: column wrap;
     background-color: #feca07;
+    /* background-color: #072330; */
     width: 30%;
     height: auto;
     word-break: break-all;  
@@ -106,6 +107,11 @@ aside h2{
     background-color:#404040;
     color: white;
     margin: auto;   
+}
+
+aside span{
+   font-weight: bold;
+   
 }
 
 .contact{
@@ -139,13 +145,10 @@ aside h2{
 
 /*section de droite */
 
-    /* .section-droite{
-        word-break: break-all;
-        margin-left: 0px;    
-        padding-right: 100px;
-
+    .section-droite{
+        /* background-color: #0C2C3B; */
         
-    } */
+    } 
 
 /*content*/
 
@@ -278,10 +281,14 @@ li h3{
 }
 
 
-.recommandation li{
-    /* background-color: brown; */
+.recommandation ul{
+    width: 600px;
+    height: 500px;
 }
-
+.recommandation li{
+    width: 600px;
+}
+  
 
 .fa-pen-alt{
     padding-right:30px;
@@ -294,6 +301,9 @@ h1,h2{
     text-transform: uppercase;
     text-align: center;
 }
+
+
+
 
 #adresse,#telephone, #email, #site{
     font-weight:bold;
