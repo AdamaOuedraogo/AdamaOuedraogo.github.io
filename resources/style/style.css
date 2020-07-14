@@ -265,7 +265,7 @@ h2 {
   font-weight: bold;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   #cv-page {
     width: auto;
     flex-direction: column;
@@ -298,4 +298,9 @@ h2 {
     text-align: justify;
     overflow: hidden;
   }
+
+  hr.Developpeur {
+      display: none;
+  }
+
 }
