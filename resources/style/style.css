@@ -23,7 +23,8 @@ body {
 #cv-page {
   display: flex;
   flex-direction: row;
-  width: 900px;
+  max-width: 900px;
+  min-width: 300px;
   color: #404040;
   border: 0.5px solid #404040;
   margin: auto;
