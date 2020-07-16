@@ -75,7 +75,7 @@ h1 {
   flex-flow: column wrap;
   background-color: #feca07;
   /* background-color: #072330; */
-  width:30%;
+  width: 30%;
   height: auto;
   word-break: break-all;
 }
@@ -111,14 +111,11 @@ aside span {
 .a-propos {
   flex-grow: 1;
 }
-.a-propos p{
+.a-propos p {
   margin-top: 20px;
-  margin-left: 20px;  
+  margin-left: 20px;
   margin-right: 20px;
   text-align: center;
-}
-
-.loisirs {
 }
 
 .loisirs ul {
@@ -148,15 +145,13 @@ aside span {
   margin-left: auto;
   margin-right: auto;
 }
-
-.content{ 
+.content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-left: 0px;
   list-style: none;
 }
-
 
 .title {
   display: flex;
@@ -167,7 +162,7 @@ aside span {
 }
 
 .fa-graduation-cap {
-   padding-right: 10px; 
+  padding-right: 10px;
   color: #feca07;
 }
 
@@ -178,7 +173,6 @@ hr.solid {
   margin-right: 10px;
   width: 550px;
 }
-
 
 /* .first {
   display: flex;
@@ -196,10 +190,9 @@ hr.solid {
   height: auto;
 }
 
-div.left{
-  padding-right:70px ;
+div.left {
+  padding-right: 70px;
   text-align: left;
-
 }
 
 .right {
@@ -209,11 +202,9 @@ div.left{
   height: auto;
   list-style: none;
 }
-div.right{
-
+div.right {
   margin-left: 0px;
   padding-left: 0px;
-
 }
 
 .date {
@@ -260,7 +251,7 @@ li h3 {
 }
 
 .fa-address-card {
-  padding-right: 10px; 
+  padding-right: 10px;
   color: #feca07;
 }
 
@@ -271,8 +262,6 @@ li h3 {
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .fa-pen-alt {
   padding-right: 10px;
@@ -327,7 +316,6 @@ h2 {
   }
 
   hr.Developpeur {
-      display: none;
+    display: none;
   }
-
 }
