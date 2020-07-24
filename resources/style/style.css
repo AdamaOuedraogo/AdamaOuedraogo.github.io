@@ -324,8 +324,10 @@ h1 {
   }
 
   .right {
-    text-align: justify;
+    /* text-align: justify; */
     overflow: hidden;
+    width: 100%;
+    margin: 0;
   }
 
   hr.Developpeur {
