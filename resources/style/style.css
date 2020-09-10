@@ -107,6 +107,7 @@ aside span {
 }
 
 .contact {
+ 
   font-size: 16px;
 }
 .a-propos {
@@ -118,6 +119,8 @@ aside span {
   margin-right: 20px;
   text-align: center;
 }
+
+
 
 .loisirs ul {
   display: flex;
@@ -133,9 +136,6 @@ aside span {
 
 /*section de droite */
 
-.section-droite {
-  /* background-color: #0C2C3B; */
-}
 
 /*content*/
 
@@ -291,6 +291,7 @@ h2 {
   .aside {
     flex-flow: row wrap;
     width: auto;
+    height: 50%;
   }
   .header{
     flex-flow: row wrap;
@@ -298,11 +299,17 @@ h2 {
 
   }
 
-  .header p,
-h1 {
-  text-align:left;
+.header p,h1 {
+  text-align:center;
   margin-left: 60px;
  
+} 
+
+.contact {
+  flex-grow: 1;
+}
+.loisirs{
+  flex-grow: 1;
 }
 
   section {
@@ -310,17 +317,19 @@ h1 {
   }
 
   hr.solid {
-    display: none;
+
+    border: 0.5px solid #feca07;
+    margin: auto;
+    width: auto;
+
   }
 
-  .loisirs {
-    display: none;
-  }
-  .contact {
-    display: none;
-  }
+
   .left {
-    display: none;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    /* display: none; */
   }
 
   .right {
@@ -332,5 +341,22 @@ h1 {
 
   hr.Developpeur {
     display: none;
+  }
+
+  aside p {
+   margin: auto;
+  }
+  aside h2 {
+    text-align: center;
+    background-color: #404040;
+    color: white;
+    /* margin: auto; */
+    width: auto;
+  }
+  img {
+    margin: auto;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: ;
   }
 }
