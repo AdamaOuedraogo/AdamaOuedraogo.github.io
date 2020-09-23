@@ -23,7 +23,6 @@ body {
   display: flex;
   flex-direction: row;
   max-width: 900px;
-  min-width: 300px;
   color: #404040;
   border: 0.5px solid #404040;
   margin: auto;
@@ -34,8 +33,9 @@ body {
 
 .header {
   display: flex;
-  /* flex-wrap: wrap; */
-  flex-flow: column wrap;
+  flex-direction: column;
+  align-items:flex-start;
+  width: 100%;
   color: #404040;
 }
 
@@ -96,7 +96,7 @@ aside p {
   margin-left: 20px;
   margin-right: auto;
 }
-aside h2 {
+ .aside-title {
   background-color: #404040;
   color: white;
   margin: auto;
@@ -107,12 +107,11 @@ aside span {
 }
 
 .contact {
- 
+
   font-size: 16px;
 }
-.a-propos {
-  flex-grow: 1;
-}
+
+
 .a-propos p {
   margin-top: 20px;
   margin-left: 20px;
@@ -256,10 +255,10 @@ li h3 {
   color: #feca07;
 }
 
-/*recommandation*/
 .recommandation {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -284,60 +283,76 @@ h2 {
 
 @media screen and (max-width: 900px) {
   #cv-page {
-    width: auto;
+    /* width: auto;
+   
+    justify-content: center;
+    align-items: center;
+    border: none; */
     flex-direction: column;
-    border: none;
+  
   }
   .aside {
-    flex-flow: row wrap;
-    width: auto;
-    height: 50%;
+    /* flex-flow: row wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
   }
+  .aside-title {
+    grow:1;
+  }
+  .contact {
+    flex-grow: 1;
+  }
+  .loisirs{
+    flex-grow: 1;
+  }
+  .section-droite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
   .header{
-    flex-flow: row wrap;
-    width: auto;
-
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
   }
 
-.header p,h1 {
-  text-align:center;
-  margin-left: 60px;
- 
-} 
-
-.contact {
-  flex-grow: 1;
-}
-.loisirs{
-  flex-grow: 1;
-}
-
-  section {
-    flex-direction: row;
-  }
 
   hr.solid {
+    width: 50%;
+  }
 
-    border: 0.5px solid #feca07;
-    margin: auto;
-    width: auto;
+  .formation{
+    justify-content: center;
+    align-items: center;
 
+  }
+  .recommandation {
+    justify-content: center;
+    align-items: center;
+
+  
+  }
+  .experience-pro {
+   justify-content: center;
+   align-self: center;
   }
 
 
-  .left {
-    overflow: hidden;
-    width: 100%;
-    margin: 0;
-    /* display: none; */
-  }
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  align-items: center;
+ 
+}
 
-  .right {
-    /* text-align: justify; */
-    overflow: hidden;
-    width: 100%;
-    margin: 0;
-  }
+
 
   hr.Developpeur {
     display: none;
@@ -346,13 +361,7 @@ h2 {
   aside p {
    margin: auto;
   }
-  aside h2 {
-    text-align: center;
-    background-color: #404040;
-    color: white;
-    /* margin: auto; */
-    width: auto;
-  }
+
   img {
     margin: auto;
     height: 150px;
