@@ -300,8 +300,9 @@ h2 {
 
   }
   .aside-title {
-    grow:1;
-  }
+    width:350px;
+    }
+  
   .contact {
     flex-grow: 1;
   }
