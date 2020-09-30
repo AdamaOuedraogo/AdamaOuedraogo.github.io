@@ -102,6 +102,7 @@ aside p {
   margin: auto;
 }
 
+
 aside span {
   font-weight: bold;
 }
@@ -283,16 +284,9 @@ h2 {
 
 @media screen and (max-width: 900px) {
   #cv-page {
-    /* width: auto;
-   
-    justify-content: center;
-    align-items: center;
-    border: none; */
     flex-direction: column;
-  
   }
   .aside {
-    /* flex-flow: row wrap; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -300,7 +294,15 @@ h2 {
 
   }
   .aside-title {
-    width:350px;
+    width:300px;
+    }
+    .title {
+      display: flex;
+      margin: 0px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
     }
   
   .contact {
@@ -331,42 +333,33 @@ h2 {
   .formation{
     justify-content: center;
     align-items: center;
+    width: 200px;
 
   }
   .recommandation {
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    width: 250px;
+  }
 
-  
+  .left {
+    width: 180px;
+  }
+
+  .right {
+    width: 180px;
   }
   .experience-pro {
    justify-content: center;
    align-self: center;
+   width: 200px;
   }
 
 
 .content {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
-  align-items: center;
- 
+  width: 200px;
+  align-items: center; 
 }
 
-
-
-  hr.Developpeur {
-    display: none;
-  }
-
-  aside p {
-   margin: auto;
-  }
-
-  img {
-    margin: auto;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: ;
-  }
 }
