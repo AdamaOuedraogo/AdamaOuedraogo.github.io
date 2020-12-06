@@ -34,7 +34,7 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
   width: 100%;
   color: #404040;
 }
@@ -47,19 +47,19 @@ hr.Developpeur {
   /* flex-grow: 1; */
   border: 0.5px solid #feca07;
   /* margin-right: 475px; */
-  margin-left: 150px;
+  margin-left: 40px;
   margin-top: 0px;
   padding-top: 0px;
   width: 50px;
 }
 
+.header {
+  margin-left: 0px;
+}
 
 .header p,
 h1 {
-  text-align: center;
-  margin-left: 150px;
-  margin-top: 50px;
-  margin-right: 180px;
+  margin-left: 40px;
 }
 .header p {
   margin-top: 0px;
@@ -97,12 +97,11 @@ aside p {
   margin-left: 20px;
   margin-right: auto;
 }
- .aside-title {
+.aside-title {
   background-color: #404040;
   color: white;
   margin: auto;
 }
-
 
 aside span {
   font-weight: bold;
@@ -112,12 +111,15 @@ aside span {
   font-size: 16px;
 }
 
-
 .a-propos p {
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
+}
+
+.loisirs {
+  margin-top: 400px;
 }
 
 .loisirs ul {
@@ -292,58 +294,53 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
-
   }
   .aside-title {
-    width:300px;
-    }
-    .title {
-      display: flex;
-      margin: 0px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 200px;
-    }
-  
+    width: 300px;
+  }
+  .title {
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+  }
+
   .contact {
     flex-grow: 1;
   }
-  .loisirs{
+  .loisirs {
     flex-grow: 1;
   }
-  .section-droite{
+  .section-droite {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
 
-  .header{
+  .header {
     flex-direction: column;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
   }
 
   hr.Developpeur {
-   display: none;
+    display: none;
   }
-  
-
 
   hr.solid {
     width: 50%;
   }
 
-  .formation{
+  .formation {
     justify-content: center;
     align-items: center;
     width: 200px;
-
   }
   .recommandation {
-    justify-content:center;
+    justify-content: center;
     width: 250px;
   }
 
@@ -355,17 +352,15 @@ h2 {
     width: 180px;
   }
   .experience-pro {
-   justify-content: center;
-   align-self: center;
-   width: 200px;
+    justify-content: center;
+    align-self: center;
+    width: 200px;
   }
 
-
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  width: 200px;
-  align-items: center; 
-}
-
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    align-items: center;
+  }
 }
