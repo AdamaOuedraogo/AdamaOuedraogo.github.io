@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#1a1a18"/>
+  <!-- ecosystem motif: a core node linked to two satellites -->
+  <line x1="16" y1="11" x2="16" y2="21" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="16" y1="21" x2="10" y2="24" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="16" y1="21" x2="22" y2="24" stroke="#0f766e" stroke-width="1.6"/>
+  <circle cx="16" cy="9" r="3.2" fill="#14b8a6"/>
+  <circle cx="9" cy="24.5" r="2.2" fill="#faf9f6"/>
+  <circle cx="23" cy="24.5" r="2.2" fill="#faf9f6"/>
+</svg>
