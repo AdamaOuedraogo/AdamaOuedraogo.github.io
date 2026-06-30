@@ -17,8 +17,23 @@ export default function MissionPage() {
         intro="For more than twenty years I have worked in software engineering and quality. Today I am exploring what comes next — and building it in the open."
       />
 
-      <section className="container-page max-w-prose pb-8">
-        <div className="prose prose-stone max-w-prose prose-headings:font-semibold prose-a:text-accent">
+      <section className="container-page pb-8">
+        <div className="grid items-start gap-10 md:grid-cols-[200px_1fr]">
+          <figure className="mx-auto md:mx-0">
+            <img
+              src="/adama.png"
+              alt="Adama Ouedraogo"
+              width={200}
+              height={200}
+              className="h-40 w-40 rounded-full object-cover ring-1 ring-ink-faint/20 md:h-48 md:w-48"
+            />
+            <figcaption className="mt-3 text-center text-sm text-ink-soft md:text-left">
+              Adama Ouedraogo
+              <span className="block text-xs text-ink-faint">Niort, France</span>
+            </figcaption>
+          </figure>
+
+          <div className="prose prose-stone max-w-prose prose-headings:font-semibold prose-a:text-accent">
           <p>
             I recently finished almost six years as a Senior QA Automation
             Engineer at Aircall. Instead of simply looking for the next QA
@@ -59,6 +74,7 @@ export default function MissionPage() {
             MCP and agentic workflows in their quality process, without losing
             the rigor that good testing demands.
           </p>
+          </div>
         </div>
       </section>
 

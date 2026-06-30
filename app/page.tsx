@@ -14,18 +14,29 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="container-page pt-20 pb-16 md:pt-32">
-        <p className="eyebrow">{site.role}</p>
-        <h1 className="mt-5 max-w-4xl text-5xl font-extrabold leading-[1.05] md:text-7xl">
-          The future of software quality is being written now.
-        </h1>
-        <p className="mt-7 max-w-2xl text-xl leading-relaxed text-ink-soft">
-          {site.tagline}
-        </p>
-        <div className="mt-9 flex flex-wrap gap-3">
-          <CTA href="/lab">Explore the Lab</CTA>
-          <CTA href="/consulting" variant="ghost">
-            Work with me
-          </CTA>
+        <div className="grid items-center gap-12 md:grid-cols-[1fr_auto]">
+          <div>
+            <p className="eyebrow">{site.role}</p>
+            <h1 className="mt-5 max-w-4xl text-5xl font-extrabold leading-[1.05] md:text-7xl">
+              The future of software quality is being written now.
+            </h1>
+            <p className="mt-7 max-w-2xl text-xl leading-relaxed text-ink-soft">
+              {site.tagline}
+            </p>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <CTA href="/lab">Explore the Lab</CTA>
+              <CTA href="/consulting" variant="ghost">
+                Work with me
+              </CTA>
+            </div>
+          </div>
+          <img
+            src="/adama.png"
+            alt="Adama Ouedraogo"
+            width={240}
+            height={240}
+            className="order-first mx-auto h-44 w-44 rounded-full object-cover ring-1 ring-ink-faint/20 md:order-last md:h-60 md:w-60"
+          />
         </div>
         <p className="mt-10 max-w-2xl border-l-2 border-accent/40 pl-4 text-sm leading-relaxed text-ink-soft">
           {site.shortBio}
