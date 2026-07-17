@@ -38,7 +38,7 @@ export function NewsletterForm() {
   if (state === "done") {
     return (
       <p className="rounded-xl border border-accent/30 bg-accent/5 p-4 text-sm text-ink">
-        Thank you — you're on the list. The first issues are coming soon.
+        Thank you, you're on the list. The first issues are coming soon.
       </p>
     );
   }

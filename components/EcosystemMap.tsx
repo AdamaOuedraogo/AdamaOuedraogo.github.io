@@ -64,6 +64,7 @@ export function EcosystemMap() {
       <Node label="Agentic Quality Lab" sub="learn · experiment · publish" href={ecosystem.lab.href} variant="core" />
       <Arrow />
       <div className="flex flex-wrap items-stretch justify-center gap-3">
+        <Node label="QA MCP Server" sub="the flagship" href={ecosystem.qamcp.href} />
         <Node label="LinkedIn" sub="build in public" href={ecosystem.linkedin.href} />
         <Node label="GitHub" sub="open source" href={ecosystem.github.href} />
         <Node label="Knowledge Base" sub="notes that compound" />

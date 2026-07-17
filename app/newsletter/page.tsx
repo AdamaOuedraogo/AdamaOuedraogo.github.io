@@ -14,7 +14,7 @@ export default function NewsletterPage() {
       <PageHeader
         eyebrow="Newsletter"
         title="The future of quality, in your inbox."
-        intro="Occasional, useful notes on AI, MCP, Playwright and agentic quality engineering — drawn from what I'm actually learning and building. No noise, no hype."
+        intro="Occasional, useful notes on AI, MCP, Playwright and agentic quality engineering, drawn from what I'm actually learning and building. No noise, no hype."
       />
 
       <section className="container-page max-w-prose pb-8">

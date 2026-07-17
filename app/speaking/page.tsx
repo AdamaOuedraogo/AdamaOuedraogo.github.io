@@ -41,7 +41,7 @@ export default function SpeakingPage() {
       <section className="container-page pb-24">
         <div className="rounded-2xl border border-ink-faint/15 p-8">
           <p className="text-ink-soft">
-            No past talks listed yet — this section grows as the journey does.
+            No past talks listed yet. This section grows as the journey does.
             Want to be the first invitation?
           </p>
           <div className="mt-5">

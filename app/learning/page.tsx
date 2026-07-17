@@ -8,7 +8,7 @@ import { ecosystem } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Learning in Public",
   description:
-    "My learning journey — posts, notes and a tracked roadmap from QA Automation to Agentic Quality Engineering.",
+    "My learning journey: posts, notes and a tracked roadmap from QA Automation to Agentic Quality Engineering.",
 };
 
 const dot: Record<string, string> = {
@@ -25,7 +25,7 @@ export default function LearningPage() {
       <PageHeader
         eyebrow="Learning in Public"
         title="Learning with me, not just about me."
-        intro="One hour of structured learning, one experiment, one post — every day. This is the roadmap and the trail of what I publish along the way."
+        intro="One hour of structured learning, one experiment, one post, every day. This is the roadmap and the trail of what I publish along the way."
       />
 
       {/* Roadmap */}

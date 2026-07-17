@@ -6,7 +6,7 @@ import { ecosystem } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Open Source",
-  description: "Projects, MCP servers and experiments — with the thinking behind them.",
+  description: "Projects, MCP servers and experiments, with the thinking behind them.",
 };
 
 export default function OpenSourcePage() {
@@ -17,7 +17,7 @@ export default function OpenSourcePage() {
       <PageHeader
         eyebrow="Open Source"
         title="Projects, not just repositories."
-        intro="Each project explains the problem, the approach, the lessons learned and what's next — because the thinking is the asset."
+        intro="Each project explains the problem, the approach, the lessons learned and what's next, because the thinking is the asset."
       />
 
       <section className="container-page pb-10">
@@ -48,7 +48,7 @@ export default function OpenSourcePage() {
             <p className="eyebrow">Live</p>
             <h3 className="mt-2 text-lg font-semibold">This website</h3>
             <p className="mt-2 text-sm text-ink-soft">
-              The public face of the lab — Next.js, TypeScript and Tailwind,
+              The public face of the lab, built with Next.js, TypeScript and Tailwind,
               consuming markdown the lab produces. Built in public.
             </p>
             <a

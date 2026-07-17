@@ -5,7 +5,7 @@ import { EcosystemMap } from "@/components/EcosystemMap";
 export const metadata: Metadata = {
   title: "Mission",
   description:
-    "Why I am rebuilding my positioning around Agentic Quality Engineering — and documenting it in public.",
+    "Why I am rebuilding my positioning around Agentic Quality Engineering, and documenting it in public.",
 };
 
 export default function MissionPage() {
@@ -14,7 +14,7 @@ export default function MissionPage() {
       <PageHeader
         eyebrow="Mission"
         title="Most portfolios describe the past. This one describes the future."
-        intro="For more than twenty years I have worked in software engineering and quality. Today I am exploring what comes next — and building it in the open."
+        intro="For more than eighteen years I have worked in software quality. Today I am exploring what comes next, and building it in the open."
       />
 
       <section className="container-page pb-8">
@@ -43,11 +43,11 @@ export default function MissionPage() {
           <p>
             Artificial intelligence is transforming how software is built. I
             believe it will transform how software quality is engineered just as
-            deeply. The market is already shifting — from a <em>builder</em>{" "}
+            deeply. The market is already shifting, from a <em>builder</em>{" "}
             mindset to an <em>orchestrator</em> mindset. Future value is not only
             in writing automation scripts. It is in orchestrating AI agents,
             connecting them to real tools through MCP, and designing workflows
-            where agents execute, observe and improve testing — while humans stay
+            where agents execute, observe and improve testing, while humans stay
             in control.
           </p>
 
@@ -55,7 +55,7 @@ export default function MissionPage() {
           <ul>
             <li>
               The goal is not the most sophisticated agent system. The goal is
-              consistency — habits that compound into visibility and credibility.
+              consistency, habits that compound into visibility and credibility.
             </li>
             <li>
               AI should <strong>guide</strong> expertise, not replace judgment.
@@ -70,7 +70,7 @@ export default function MissionPage() {
           <h2>What I'm becoming</h2>
           <p>
             An <strong>AI-Powered / Agentic Quality Engineering Consultant</strong>{" "}
-            — helping QA engineers, QA leads and engineering managers adopt AI,
+            helping QA engineers, QA leads and engineering managers adopt AI,
             MCP and agentic workflows in their quality process, without losing
             the rigor that good testing demands.
           </p>

@@ -13,9 +13,9 @@ export const site = {
   name: "Adama Ouedraogo",
   role: "AI-Powered Quality Engineering Consultant",
   tagline:
-    "Helping engineering teams build better software using AI, MCP and agentic workflows — while keeping humans in control.",
+    "Helping engineering teams build better software using AI, MCP and agentic workflows, while keeping humans in control.",
   shortBio:
-    "Senior QA Automation Engineer with 20+ years in software engineering. After almost six years at Aircall, I'm rebuilding my positioning around Agentic Quality Engineering — and documenting the whole journey in public.",
+    "Staff QA Automation Engineer with 18+ years in software quality. Former QA Staff Engineer at Aircall, now building open-source AI capabilities for software quality, and documenting the whole journey in public.",
   location: "Niort, France · Remote across France & Europe",
   email: "adama692@gmail.com",
   url: "https://adamaouedraogo.github.io",
@@ -38,7 +38,7 @@ export const ecosystem = {
     label: "Malt",
     kind: "offer",
     href: "https://www.malt.fr/profile/adamaouedraogo5",
-    blurb: "Available for freelance missions — Agentic Quality Engineering.",
+    blurb: "Available for freelance missions in Agentic Quality Engineering.",
   },
   github: {
     label: "GitHub",
@@ -46,11 +46,19 @@ export const ecosystem = {
     href: "https://github.com/AdamaOuedraogo",
     blurb: "Open-source experiments, MCP servers and this site itself.",
   },
+  qamcp: {
+    label: "QA MCP Server",
+    kind: "source",
+    href: "https://github.com/AdamaOuedraogo/qa-mcp-server",
+    blurb: "The flagship: 18+ years of QA expertise as open-source MCP capabilities AI agents can execute.",
+  },
   lab: {
     label: "Agentic Quality Lab",
     kind: "source",
-    href: "https://github.com/AdamaOuedraogo/agentic-quality-lab",
-    blurb: "My operating system: learn daily, experiment, publish. The engine behind this site.",
+    // The Lab repo is private; the Lab's output is showcased on-site at /lab.
+    // Public open-source cred rides on the qamcp node above.
+    href: "/lab",
+    blurb: "The learning engine: learn daily, experiment, publish. Produces the content this site showcases.",
   },
 } as const;
 
@@ -72,7 +80,7 @@ export const nav = [
 export const offers = [
   {
     title: "Adopt AI for QA",
-    body: "Bring LLMs into your quality workflow pragmatically: test generation, edge-case discovery, AI-assisted review and debugging — without losing rigor.",
+    body: "Bring LLMs into your quality workflow pragmatically: test generation, edge-case discovery, AI-assisted review and debugging, without losing rigor.",
   },
   {
     title: "Build AI-assisted testing workflows",
@@ -80,7 +88,7 @@ export const offers = [
   },
   {
     title: "Explore MCP & agentic tooling",
-    body: "Expose your real test stack — runners, reports, ticketing — as tools agents can use through the Model Context Protocol.",
+    body: "Expose your real test stack (runners, reports, ticketing) as tools agents can use through the Model Context Protocol.",
   },
   {
     title: "Modernize your QA strategy",

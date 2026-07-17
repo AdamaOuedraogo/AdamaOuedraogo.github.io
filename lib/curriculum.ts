@@ -14,7 +14,7 @@ export interface Phase {
 export const curriculum: Phase[] = [
   { n: 1, title: "MCP Foundations", goal: "Understand how agents get eyes and hands.", status: "current" },
   { n: 2, title: "LLMs for QA", goal: "Apply LLMs concretely to testing work.", status: "upcoming" },
-  { n: 3, title: "Agent Design", goal: "Design agents that act, observe and improve — humans in control.", status: "upcoming" },
+  { n: 3, title: "Agent Design", goal: "Design agents that act, observe and improve, with humans in control.", status: "upcoming" },
   { n: 4, title: "Playwright + MCP", goal: "Give agents real testing hands via Playwright MCP.", status: "upcoming" },
   { n: 5, title: "RAG for QA", goal: "Ground agents in real product knowledge.", status: "upcoming" },
   { n: 6, title: "Multi-Agent Systems", goal: "Orchestrate multiple agents for quality workflows.", status: "upcoming" },

@@ -12,12 +12,12 @@ const steps = [
   {
     n: "01",
     title: "Diagnose",
-    body: "We look at your current quality workflow — test suites, flakiness, review and release friction — and find where AI realistically helps.",
+    body: "We look at your current quality workflow (test suites, flakiness, review and release friction) and find where AI realistically helps.",
   },
   {
     n: "02",
     title: "Prototype",
-    body: "A small, concrete experiment: AI-assisted test generation, a Playwright MCP workflow, or agent-assisted review — finishable, not theoretical.",
+    body: "A small, concrete experiment: AI-assisted test generation, a Playwright MCP workflow, or agent-assisted review. Finishable, not theoretical.",
   },
   {
     n: "03",
@@ -31,7 +31,7 @@ export default function ConsultingPage() {
     <>
       <PageHeader
         eyebrow="Consulting"
-        title="Helping teams adopt AI-native quality — without losing rigor."
+        title="Helping teams adopt AI-native quality, without losing rigor."
         intro="Not “hire me”. I help engineering teams understand and adopt AI, MCP and agentic workflows in their quality process, keeping human judgment in control."
       />
 
@@ -63,7 +63,7 @@ export default function ConsultingPage() {
         <div className="rounded-2xl border border-accent/30 bg-accent/5 p-8">
           <h2 className="text-2xl font-semibold">Let's talk.</h2>
           <p className="mt-3 max-w-prose text-ink-soft">
-            Available for remote missions across France and Europe — Playwright,
+            Available for remote missions across France and Europe: Playwright,
             E2E testing, AI-assisted testing and agentic QA. The best way to start
             is a short conversation about where your team is today.
           </p>

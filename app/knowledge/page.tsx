@@ -19,7 +19,7 @@ export default function KnowledgePage() {
       <PageHeader
         eyebrow="Knowledge Base"
         title="Notes that compound into expertise."
-        intro="Over time this becomes one of the biggest assets of the site — a second brain on MCP, AI, Playwright and agentic quality, written in plain language as I learn."
+        intro="Over time this becomes one of the biggest assets of the site, a second brain on MCP, AI, Playwright and agentic quality, written in plain language as I learn."
       />
 
       <section className="container-page pb-8">

@@ -52,12 +52,12 @@ export default function Home() {
               Not a portfolio. An operating system for a transformation.
             </h2>
             <p className="mt-5 max-w-prose text-ink-soft">
-              Everything here is connected. A daily learning engine — the{" "}
+              Everything here is connected. A daily learning engine, the{" "}
               <a href={ecosystem.lab.href} target="_blank" rel="noreferrer" className="link-underline">
                 Agentic Quality Lab
-              </a>{" "}
-              — produces experiments, posts and notes. This site is its public
-              face. The lab produces; the website showcases; and it all compounds
+              </a>
+              , produces experiments, posts and notes. This site is its public
+              face. The lab produces, the website showcases, and it all compounds
               toward consulting, training and a growing audience.
             </p>
             <div className="mt-6">
