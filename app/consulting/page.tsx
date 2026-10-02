@@ -5,19 +5,19 @@ import { offers, ecosystem, site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Consulting",
   description:
-    "I help engineering teams adopt AI for QA, build AI-assisted testing workflows, explore MCP and modernize their quality strategy.",
+    "Freelance Playwright and Cypress automation, risk-based test strategy, CI/CD and AI-assisted testing.",
 };
 
 const steps = [
   {
     n: "01",
     title: "Diagnose",
-    body: "We look at your current quality workflow (test suites, flakiness, review and release friction) and find where AI realistically helps.",
+    body: "We look at your current quality workflow (test suites, flakiness, review and release friction) and identify the highest-priority improvements.",
   },
   {
     n: "02",
     title: "Prototype",
-    body: "A small, concrete experiment: AI-assisted test generation, a Playwright MCP workflow, or agent-assisted review. Finishable, not theoretical.",
+    body: "Deliver a useful first increment: a critical test journey, a CI improvement or a focused AI-assisted testing experiment.",
   },
   {
     n: "03",
@@ -31,8 +31,8 @@ export default function ConsultingPage() {
     <>
       <PageHeader
         eyebrow="Consulting"
-        title="Helping teams adopt AI-native quality, without losing rigor."
-        intro="Not “hire me”. I help engineering teams understand and adopt AI, MCP and agentic workflows in their quality process, keeping human judgment in control."
+        title="Practical QA automation and quality engineering."
+        intro="I help teams build maintainable tests, prioritize coverage and make CI results useful. Playwright, Cypress and risk-based testing are the foundation; AI supports the work where it helps."
       />
 
       <section className="container-page pb-12">
@@ -63,9 +63,7 @@ export default function ConsultingPage() {
         <div className="rounded-2xl border border-accent/30 bg-accent/5 p-8">
           <h2 className="text-2xl font-semibold">Let's talk.</h2>
           <p className="mt-3 max-w-prose text-ink-soft">
-            Available for remote missions across France and Europe: Playwright,
-            E2E testing, AI-assisted testing and agentic QA. The best way to start
-            is a short conversation about where your team is today.
+            Based in Niort, with remote work preferred. Available on-site up to three days a week in Paris, Nantes or Bordeaux. Let’s start with your product, your quality challenges and the scope of your mission.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <CTA href={`mailto:${site.email}`} external>

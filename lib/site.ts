@@ -11,12 +11,12 @@
 
 export const site = {
   name: "Adama Ouedraogo",
-  role: "AI-Powered Quality Engineering Consultant",
+  role: "Senior QA Automation / Quality Engineering Consultant",
   tagline:
-    "Helping engineering teams build better software using AI, MCP and agentic workflows, while keeping humans in control.",
+    "I help teams build reliable end-to-end tests, improve CI feedback and use AI where it makes QA work better.",
   shortBio:
-    "Staff QA Automation Engineer with 18+ years in software quality. Former QA Staff Engineer at Aircall, now building open-source AI capabilities for software quality, and documenting the whole journey in public.",
-  location: "Niort, France · Remote across France & Europe",
+    "18+ years in software quality, including six years at Aircall in Senior and Staff QA roles. My focus: Playwright, Cypress, CI/CD and practical AI-assisted testing.",
+  location: "Niort, France · Remote preferred · On-site up to 3 days/week in Paris, Nantes or Bordeaux",
   email: "adama692@gmail.com",
   url: "https://adamaouedraogo.github.io",
 } as const;
@@ -32,13 +32,13 @@ export const ecosystem = {
     label: "LinkedIn",
     kind: "presence",
     href: "https://www.linkedin.com/in/adama-ou%C3%A9draogo-731a0629/",
-    blurb: "Daily build-in-public posts on QA, AI, MCP and agentic testing.",
+    blurb: "Experience and notes on QA automation and AI-assisted testing.",
   },
   malt: {
     label: "Malt",
     kind: "offer",
     href: "https://www.malt.fr/profile/adamaouedraogo5",
-    blurb: "Available for freelance missions in Agentic Quality Engineering.",
+    blurb: "Freelance QA automation and quality engineering missions.",
   },
   github: {
     label: "GitHub",
@@ -50,7 +50,7 @@ export const ecosystem = {
     label: "QA MCP Server",
     kind: "source",
     href: "https://github.com/AdamaOuedraogo/qa-mcp-server",
-    blurb: "The flagship: 18+ years of QA expertise as open-source MCP capabilities AI agents can execute.",
+    blurb: "An open-source MCP server for typed QA tools, testing guidance and opt-in test execution.",
   },
   lab: {
     label: "Agentic Quality Lab",
@@ -66,32 +66,24 @@ export type EcosystemNode = (typeof ecosystem)[keyof typeof ecosystem];
 
 /** Primary site navigation — mirrors the sections in the website vision. */
 export const nav = [
-  { label: "Mission", href: "/mission" },
-  { label: "The Lab", href: "/lab" },
-  { label: "Learning", href: "/learning" },
-  { label: "Knowledge", href: "/knowledge" },
-  { label: "Open Source", href: "/open-source" },
+  { label: "About", href: "/mission" },
+  { label: "Projects", href: "/open-source" },
+  { label: "Notes", href: "/learning" },
   { label: "Consulting", href: "/consulting" },
-  { label: "Speaking", href: "/speaking" },
-  { label: "Newsletter", href: "/newsletter" },
 ] as const;
 
 /** What I help teams with — used on the home page and consulting page. */
 export const offers = [
   {
-    title: "Adopt AI for QA",
-    body: "Bring LLMs into your quality workflow pragmatically: test generation, edge-case discovery, AI-assisted review and debugging, without losing rigor.",
+    title: "QA automation",
+    body: "Build and maintain Playwright and Cypress test suites around critical user journeys, with readable tests and dependable test data.",
   },
   {
-    title: "Build AI-assisted testing workflows",
-    body: "Turn Jira tickets and acceptance criteria into maintainable Playwright automation, with AI accelerating creation and maintenance.",
+    title: "Quality engineering",
+    body: "Prioritize coverage by risk, integrate tests into CI/CD and investigate flaky failures so teams can act on the results.",
   },
   {
-    title: "Explore MCP & agentic tooling",
-    body: "Expose your real test stack (runners, reports, ticketing) as tools agents can use through the Model Context Protocol.",
-  },
-  {
-    title: "Modernize your QA strategy",
-    body: "Design an Agentic Quality Engineering approach that scales with continuous delivery while keeping humans in the loop.",
+    title: "AI-assisted testing",
+    body: "Explore AI for test design and failure analysis, and connect assistants to testing tools through MCP. Keep review and decisions with the team.",
   },
 ] as const;

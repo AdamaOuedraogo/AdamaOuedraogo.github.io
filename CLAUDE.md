@@ -395,3 +395,9 @@ Always ask:
 If not, don't build it.
 
 The website exists to support my transformation, not simply display my past.
+
+# Current direction — October 2026
+
+The owner's latest request supersedes the earlier future-first homepage direction above. Keep the public presentation concise and grounded in the owner's QA career, inspired by the clarity of Benjamin Lassaut's site and GitHub README.
+
+Lead with freelance QA Automation / Quality Engineering, Playwright, Cypress, CI/CD, and six years at Aircall. Present AI-assisted testing and QA MCP Server as a practical specialization with an evolving MVP, not as established client outcomes. Keep the main navigation to About, Projects, Notes, and Consulting. Preserve existing notes and route URLs. Account-profile copy lives in docs/profile as proposed text for manual application; it is not proof of a live account update.
