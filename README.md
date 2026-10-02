@@ -1,80 +1,29 @@
-# Adama Ouedraogo — Digital Headquarters
+# Adama Ouedraogo
 
-The public face of my transformation from **QA Automation Engineer** to
-**AI-Powered / Agentic Quality Engineering Consultant**.
+Professional website for an **AI-Powered Quality Engineering Consultant** with **Staff QA Automation Engineer** experience, 18+ years in software quality and six years at Aircall.
 
-Not a portfolio. Not a résumé. The central hub of a connected ecosystem.
+The flagship is [QA MCP Server](https://github.com/AdamaOuedraogo/qa-mcp-server): reusable QA engineering judgment for AI assistants. The site presents concrete QA expertise, project evidence, notes and freelance services.
 
-```
-            Learn  (Udemy · docs · GitHub · YouTube)
-                 │
-                 ▼
-        Agentic Quality Lab        ← the operating system (separate repo)
-        learn · experiment · publish
-                 │   produces markdown
-                 ▼
-        npm run sync  ──►  this site's /content
-                 │
-      ┌──────────┼───────────┐
-      ▼          ▼           ▼
-  LinkedIn    GitHub    Knowledge Base
-      └──────────┼───────────┘
-                 ▼
-          This website  (the public face)
-                 │
-      ┌──────────┼───────────┐
-      ▼          ▼           ▼
-  Consulting  Training    Newsletter
-```
+## Structure
 
-**The lab produces. The website showcases. No duplication.**
+- `lib/site.ts`: mirrored public identity, location, mobility and links.
+- `app/`: About, Projects, Notes and Consulting, plus historical routes retained for existing links.
+- `content/`: Markdown notes, posts and historical experiments.
+- `lib/content.ts`: typed Markdown reader. No active external content sync.
 
-## Architecture
+Private strategy and unpublished profile drafts are maintained outside this public repository. Historical entries retain their original wording; the former lab brand is not a current offer.
 
-- **Next.js (App Router) · TypeScript · Tailwind CSS** — markdown-first, no CMS.
-- `lib/site.ts` — single source of truth for identity + every ecosystem link
-  (LinkedIn, Malt, GitHub, the Lab). Change a link once, it updates everywhere.
-- `content/` — markdown the [Agentic Quality Lab](https://github.com/AdamaOuedraogo/agentic-quality-lab)
-  writes via `npm run sync`. Collections: `lab`, `posts`, `experiments`
-  (auto-synced) and `notes`, `projects` (hand-authored here).
-- `lib/content.ts` — the only reader of `content/`. Frontmatter + body in, typed
-  docs out.
-- Pages mirror the vision: Mission · The Lab · Learning · Knowledge · Open Source
-  · Consulting · Speaking · Newsletter.
-
-## Develop
+## Develop and validate
 
 ```bash
-npm install
-npm run dev        # http://localhost:3000
-npm run build      # production build
+npm ci
+npm run dev
+npm run typecheck
+STATIC_EXPORT=true npm run build
 ```
-
-## Updating content
-
-Content flows from the lab. In the **lab repo**:
-
-```bash
-npm run sync       # writes lab/ posts/ experiments/ → this repo's content/
-```
-
-Then commit & push here to deploy. Notes and projects are authored directly in
-`content/notes` and `content/projects`.
 
 ## Deploy
 
-**Primary — Vercel (recommended):** import this repo at vercel.com. Zero config;
-Next.js is auto-detected. Add a custom domain there when ready
-(`adamaouedraogo.com` / `.dev`) — that's the real alignment win.
+The existing GitHub Actions workflow builds a static export into `out/` and deploys GitHub Pages on pushes to the configured production branches. A review-branch push does not deploy the website.
 
-**Fallback — GitHub Pages (zero-config):** `.github/workflows/deploy.yml` builds a
-static export and publishes to `adamaouedraogo.github.io` on every push. One-time
-setup: **Settings → Pages → Source → GitHub Actions**. The static export is enabled
-with `STATIC_EXPORT=true npm run build` (verified to produce `/out`).
-
-> Optional: set `NEXT_PUBLIC_NEWSLETTER_ACTION` to a provider endpoint
-> (Buttondown / ConvertKit / Resend) to wire up newsletter signups.
-
-## Legacy
-
-The previous HTML CV is archived in [`/legacy`](./legacy) for reference.
+The former HTML CV is retained under `legacy/` as history.

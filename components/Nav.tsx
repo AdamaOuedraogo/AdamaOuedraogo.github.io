@@ -14,7 +14,10 @@ export function Nav() {
           </span>
         </Link>
 
-        <nav aria-label="Main navigation" className="hidden items-center gap-5 md:flex">
+        <nav
+          aria-label="Main navigation"
+          className="hidden items-center gap-5 md:flex"
+        >
           {nav.map((item) => (
             <Link
               key={item.href}
@@ -33,8 +36,19 @@ export function Nav() {
           Work with me
         </Link>
       </div>
-      <nav aria-label="Mobile navigation" className="container-page flex flex-wrap gap-x-5 gap-y-2 pb-3 md:hidden">
-        {nav.map((item) => <Link key={item.href} href={item.href} className="text-sm text-ink-soft hover:text-accent">{item.label}</Link>)}
+      <nav
+        aria-label="Mobile navigation"
+        className="container-page flex flex-wrap gap-x-5 gap-y-2 pb-3 md:hidden"
+      >
+        {nav.map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            className="text-sm text-ink-soft hover:text-accent"
+          >
+            {item.label}
+          </Link>
+        ))}
       </nav>
     </header>
   );

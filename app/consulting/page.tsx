@@ -36,11 +36,13 @@ export default function ConsultingPage() {
       />
 
       <section className="container-page pb-12">
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 md:grid-cols-3">
           {offers.map((o) => (
             <Card key={o.title}>
               <h3 className="text-lg font-semibold text-ink">{o.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{o.body}</p>
+              <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+                {o.body}
+              </p>
             </Card>
           ))}
         </div>
@@ -50,7 +52,10 @@ export default function ConsultingPage() {
         <p className="eyebrow">How we'd work</p>
         <div className="mt-6 grid gap-4 md:grid-cols-3">
           {steps.map((s) => (
-            <div key={s.n} className="rounded-2xl border border-ink-faint/15 p-6">
+            <div
+              key={s.n}
+              className="rounded-2xl border border-ink-faint/15 p-6"
+            >
               <span className="font-mono text-sm text-accent">{s.n}</span>
               <h3 className="mt-3 text-lg font-semibold">{s.title}</h3>
               <p className="mt-2 text-sm text-ink-soft">{s.body}</p>
@@ -63,7 +68,8 @@ export default function ConsultingPage() {
         <div className="rounded-2xl border border-accent/30 bg-accent/5 p-8">
           <h2 className="text-2xl font-semibold">Let's talk.</h2>
           <p className="mt-3 max-w-prose text-ink-soft">
-            Based in Niort, with remote work preferred. Available on-site up to three days a week in Paris, Nantes or Bordeaux. Let’s start with your product, your quality challenges and the scope of your mission.
+            {site.location}. {site.mobility} Let’s start with your product, your
+            quality challenges and the scope of your mission.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <CTA href={`mailto:${site.email}`} external>

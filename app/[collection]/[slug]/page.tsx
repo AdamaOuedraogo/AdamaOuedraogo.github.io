@@ -5,13 +5,19 @@ import { getDoc, getSlugs, type Collection } from "@/lib/content";
 import { Markdown } from "@/components/Markdown";
 import { Tag } from "@/components/ui";
 
-const COLLECTIONS: Collection[] = ["lab", "posts", "notes", "experiments", "projects"];
+const COLLECTIONS: Collection[] = [
+  "lab",
+  "posts",
+  "notes",
+  "experiments",
+  "projects",
+];
 
 const BACK: Record<Collection, { href: string; label: string }> = {
-  lab: { href: "/lab", label: "The Lab" },
-  posts: { href: "/learning", label: "Learning in Public" },
-  notes: { href: "/knowledge", label: "Knowledge Base" },
-  experiments: { href: "/lab", label: "The Lab" },
+  lab: { href: "/lab", label: "Historical experiments" },
+  posts: { href: "/learning", label: "Posts" },
+  notes: { href: "/knowledge", label: "Notes" },
+  experiments: { href: "/lab", label: "Historical experiments" },
   projects: { href: "/open-source", label: "Open Source" },
 };
 
@@ -59,12 +65,18 @@ export default async function DocPage({
         <div className="flex flex-wrap items-center gap-3 font-mono text-xs text-ink-faint">
           <span>{doc.date}</span>
           {doc.phase && <span className="text-accent">{doc.phase}</span>}
-          {doc.status && <span className="uppercase tracking-wider text-accent">{doc.status}</span>}
+          {doc.status && (
+            <span className="uppercase tracking-wider text-accent">
+              {doc.status}
+            </span>
+          )}
         </div>
         <h1 className="mt-3 text-3xl font-semibold leading-tight md:text-4xl">
           {doc.title}
         </h1>
-        {doc.summary && <p className="mt-4 text-lg text-ink-soft">{doc.summary}</p>}
+        {doc.summary && (
+          <p className="mt-4 text-lg text-ink-soft">{doc.summary}</p>
+        )}
         {doc.tags.length > 0 && (
           <div className="mt-4 flex flex-wrap gap-1.5">
             {doc.tags.map((t) => (
@@ -76,6 +88,12 @@ export default async function DocPage({
 
       <hr className="my-8 border-ink-faint/15" />
 
+      {collection === "lab" && (
+        <p className="mb-6 text-sm text-ink-faint">
+          Historical entry. The former lab name is retained here as a record of
+          the original work; QA MCP Server is the current flagship project.
+        </p>
+      )}
       <Markdown>{doc.body}</Markdown>
 
       {doc.source && (

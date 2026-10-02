@@ -11,14 +11,17 @@
 
 export const site = {
   name: "Adama Ouedraogo",
-  role: "Senior QA Automation / Quality Engineering Consultant",
+  role: "AI-Powered Quality Engineering Consultant",
   tagline:
     "I help teams build reliable end-to-end tests, improve CI feedback and use AI where it makes QA work better.",
   shortBio:
-    "18+ years in software quality, including six years at Aircall in Senior and Staff QA roles. My focus: Playwright, Cypress, CI/CD and practical AI-assisted testing.",
-  location: "Niort, France · Remote preferred · On-site up to 3 days/week in Paris, Nantes or Bordeaux",
+    "Staff QA Automation Engineer with 18+ years in software quality and six years at Aircall. My focus: Playwright, Cypress, CI/CD and practical AI-assisted testing.",
+  location: "Niort, France · Remote across France & Europe",
   email: "adama692@gmail.com",
   url: "https://adamaouedraogo.github.io",
+  expertise: "Staff QA Automation Engineer",
+  mobility:
+    "Remote preferred. On-site arrangements in Paris, Nantes or Bordeaux are agreed per mission, up to three days a week.",
 } as const;
 
 /**
@@ -50,15 +53,8 @@ export const ecosystem = {
     label: "QA MCP Server",
     kind: "source",
     href: "https://github.com/AdamaOuedraogo/qa-mcp-server",
-    blurb: "An open-source MCP server for typed QA tools, testing guidance and opt-in test execution.",
-  },
-  lab: {
-    label: "Agentic Quality Lab",
-    kind: "source",
-    // The Lab repo is private; the Lab's output is showcased on-site at /lab.
-    // Public open-source cred rides on the qamcp node above.
-    href: "/lab",
-    blurb: "The learning engine: learn daily, experiment, publish. Produces the content this site showcases.",
+    blurb:
+      "An open-source MCP server for typed QA tools, testing guidance and opt-in test execution.",
   },
 } as const;
 
@@ -68,7 +64,7 @@ export type EcosystemNode = (typeof ecosystem)[keyof typeof ecosystem];
 export const nav = [
   { label: "About", href: "/mission" },
   { label: "Projects", href: "/open-source" },
-  { label: "Notes", href: "/learning" },
+  { label: "Notes", href: "/knowledge" },
   { label: "Consulting", href: "/consulting" },
 ] as const;
 

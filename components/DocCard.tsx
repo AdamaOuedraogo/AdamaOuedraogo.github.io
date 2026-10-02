@@ -17,7 +17,9 @@ export function DocCard({ doc }: { doc: Doc }) {
   return (
     <Card className="flex flex-col gap-3">
       <div className="flex items-center justify-between gap-3">
-        <span className="font-mono text-xs text-ink-faint">{formatDate(doc.date)}</span>
+        <span className="font-mono text-xs text-ink-faint">
+          {formatDate(doc.date)}
+        </span>
         {doc.status && (
           <span className="font-mono text-[11px] uppercase tracking-wider text-accent">
             {doc.status}

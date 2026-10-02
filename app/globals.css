@@ -19,11 +19,15 @@
     @apply bg-accent/20 text-ink;
   }
   /* Heavy, high-contrast headings — the confident, legible look of filiphric.com */
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     @apply tracking-tight text-ink;
     font-weight: 800;
   }
-  h3, h4 {
+  h3,
+  h4 {
     font-weight: 700;
   }
 }
@@ -43,8 +47,16 @@
 
 /* Respect reduced motion. */
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  * { animation: none !important; transition: none !important; }
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
-:focus-visible { outline: 2px solid #0f766e; outline-offset: 4px; }
+:focus-visible {
+  outline: 2px solid #0f766e;
+  outline-offset: 4px;
+}

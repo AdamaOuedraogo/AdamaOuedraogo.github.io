@@ -2,7 +2,7 @@
   "name": "adama-ouedraogo-hq",
   "version": "1.0.0",
   "private": true,
-  "description": "Digital headquarters of Adama Ouedraogo — AI-Powered / Agentic Quality Engineering Consultant. Public face of the Agentic Quality Lab.",
+  "description": "Professional website of Adama Ouedraogo, AI-Powered Quality Engineering Consultant and Staff QA Automation Engineer. QA MCP Server, practical services and notes.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
