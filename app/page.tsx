@@ -1,110 +1,139 @@
 import Link from "next/link";
 import { site, offers, ecosystem } from "@/lib/site";
-import { CTA, Card } from "@/components/ui";
-import { EcosystemMap } from "@/components/EcosystemMap";
-import { DocCard } from "@/components/DocCard";
-import { getLatest } from "@/lib/content";
+import { CTA } from "@/components/ui";
 
 export default function Home() {
-  const latestPosts = getLatest("posts", 2);
-  const latestLab = getLatest("lab", 1);
-  const latest = [...latestLab, ...latestPosts].slice(0, 3);
-
   return (
     <>
-      {/* Hero */}
-      <section className="container-page pt-20 pb-16 md:pt-32">
-        <div className="grid items-center gap-12 md:grid-cols-[1fr_auto]">
+      <section className="container-page pt-16 pb-16 md:pt-24">
+        <div className="grid items-start gap-10 md:grid-cols-[1fr_160px]">
           <div>
-            <p className="eyebrow">{site.role}</p>
-            <h1 className="mt-5 max-w-4xl text-5xl font-extrabold leading-[1.05] md:text-7xl">
-              The future of software quality is being written now.
+            <p className="eyebrow">Freelance · Quality Engineering</p>
+            <h1 className="mt-5 text-5xl leading-[1.1] md:text-6xl">
+              Adama Ouedraogo
             </h1>
-            <p className="mt-7 max-w-2xl text-xl leading-relaxed text-ink-soft">
+            <p className="mt-5 text-xl font-semibold">{site.role}</p>
+            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-soft">
               {site.tagline}
             </p>
-            <div className="mt-9 flex flex-wrap gap-3">
-              <CTA href="/lab">Explore the Lab</CTA>
-              <CTA href="/consulting" variant="ghost">
-                Work with me
+            <p className="mt-5 max-w-2xl leading-relaxed text-ink-soft">
+              {site.shortBio}
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <CTA href="/consulting">Discuss a mission</CTA>
+              <CTA href={ecosystem.qamcp.href} external variant="ghost">
+                Explore QA MCP Server ↗
               </CTA>
             </div>
+            <p className="mt-6 text-sm text-ink-faint">{site.location}</p>
           </div>
           <img
             src="/adama.png"
             alt="Adama Ouedraogo"
-            width={240}
-            height={240}
-            className="order-first mx-auto h-44 w-44 rounded-full object-cover ring-1 ring-ink-faint/20 md:order-last md:h-60 md:w-60"
+            width={160}
+            height={160}
+            className="order-first h-28 w-28 rounded-2xl object-cover md:order-last md:h-40 md:w-40"
           />
         </div>
-        <p className="mt-10 max-w-2xl border-l-2 border-accent/40 pl-4 text-sm leading-relaxed text-ink-soft">
-          {site.shortBio}
-        </p>
       </section>
-
-      {/* Ecosystem map */}
-      <section className="border-y border-ink-faint/15 bg-paper-raised/50 py-16">
-        <div className="container-page grid items-center gap-12 md:grid-cols-[1fr_1.1fr]">
-          <div>
-            <p className="eyebrow">One connected system</p>
-            <h2 className="mt-4 text-3xl font-bold leading-tight">
-              Not a portfolio. An operating system for a transformation.
-            </h2>
-            <p className="mt-5 max-w-prose text-ink-soft">
-              Everything here is connected. A daily learning engine, the{" "}
-              <a href={ecosystem.lab.href} target="_blank" rel="noreferrer" className="link-underline">
-                Agentic Quality Lab
-              </a>
-              , produces experiments, posts and notes. This site is its public
-              face. The lab produces, the website showcases, and it all compounds
-              toward consulting, training and a growing audience.
-            </p>
-            <div className="mt-6">
-              <Link href="/mission" className="link-underline text-sm font-medium">
-                Read the mission →
-              </Link>
-            </div>
-          </div>
-          <EcosystemMap />
-        </div>
-      </section>
-
-      {/* What I help teams with */}
-      <section className="container-page py-20">
-        <p className="eyebrow">How I help</p>
-        <h2 className="mt-4 max-w-2xl text-3xl font-bold leading-tight">
-          I help engineering teams prepare for the future of software quality.
+      <section
+        className="container-page border-t border-ink-faint/15 py-12"
+        aria-labelledby="project-title"
+      >
+        <p className="eyebrow">Featured project · Open source</p>
+        <h2 id="project-title" className="mt-3 text-2xl">
+          QA MCP Server
         </h2>
-        <div className="mt-10 grid gap-4 sm:grid-cols-2">
-          {offers.map((o) => (
-            <Card key={o.title}>
-              <h3 className="text-lg font-semibold text-ink">{o.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{o.body}</p>
-            </Card>
+        <p className="mt-4 max-w-2xl leading-relaxed text-ink-soft">
+          I am encoding QA engineering judgment as reusable capabilities for AI
+          assistants. The flaky-test triage capability classifies failures,
+          presents evidence and recommends actions, with rules that prevent
+          hiding defects through unsafe repairs.
+        </p>
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-faint">
+          Playwright, Cypress and test reports supply observations. The value is
+          the QA reasoning applied to them. Test runners use dry-run defaults
+          with opt-in execution.
+        </p>
+        <a
+          href={ecosystem.qamcp.href}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-5 inline-block link-underline"
+        >
+          Explore the repository ↗
+        </a>
+      </section>
+      <section
+        className="container-page border-t border-ink-faint/15 py-12"
+        aria-labelledby="work-title"
+      >
+        <p className="eyebrow">What I bring to your team</p>
+        <h2 id="work-title" className="mt-3 text-2xl">
+          Reliable tests. Clear priorities. Useful feedback.
+        </h2>
+        <div className="mt-8 grid gap-8 md:grid-cols-3">
+          {offers.map((offer) => (
+            <div key={offer.title}>
+              <h3 className="text-lg">{offer.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+                {offer.body}
+              </p>
+            </div>
           ))}
         </div>
       </section>
-
-      {/* Latest from the lab */}
-      <section className="container-page pb-24">
-        <div className="flex items-end justify-between">
+      <section
+        className="container-page border-t border-ink-faint/15 py-12"
+        aria-labelledby="experience-title"
+      >
+        <p className="eyebrow">Experience</p>
+        <div className="mt-4 grid gap-6 md:grid-cols-[180px_1fr]">
           <div>
-            <p className="eyebrow">Latest from the lab</p>
-            <h2 className="mt-4 text-3xl font-bold leading-tight">
-              Learning in public, every day.
+            <h2 id="experience-title" className="text-2xl">
+              Aircall
             </h2>
+            <p className="mt-2 text-sm text-ink-faint">2020–2026 · SaaS</p>
           </div>
-          <Link href="/learning" className="hidden link-underline text-sm font-medium sm:block">
-            See all →
-          </Link>
+          <div>
+            <h3 className="text-lg">Staff QA / Engineering Productivity</h3>
+            <p className="mt-3 leading-relaxed text-ink-soft">
+              Six years working on end-to-end automation, CI pipelines and
+              release confidence. My work included Cypress and Playwright,
+              flaky-test investigation, desktop testing and collaboration with
+              engineering teams on critical user journeys.
+            </p>
+            <Link
+              href="/mission"
+              className="mt-4 inline-block link-underline text-sm"
+            >
+              More about my approach →
+            </Link>
+          </div>
         </div>
-        <div className="mt-10 grid gap-4 md:grid-cols-3">
-          {latest.length > 0 ? (
-            latest.map((doc) => <DocCard key={`${doc.collection}-${doc.slug}`} doc={doc} />)
-          ) : (
-            <p className="text-ink-soft">Content is syncing from the lab…</p>
-          )}
+      </section>
+
+      <section className="container-page border-t border-ink-faint/15 pt-12 pb-4">
+        <h2 className="text-2xl">
+          Let’s make your quality workflow work better.
+        </h2>
+        <p className="mt-4 max-w-2xl leading-relaxed text-ink-soft">
+          Available for freelance QA automation and quality engineering
+          missions. Tell me about your product, your tests and what your team
+          needs.
+        </p>
+        <div className="mt-6 flex flex-wrap gap-4">
+          <a href={`mailto:${site.email}`} className="link-underline">
+            Email me →
+          </a>
+          <a
+            href={ecosystem.malt.href}
+            target="_blank"
+            rel="noreferrer"
+            className="link-underline"
+          >
+            Malt ↗
+          </a>
         </div>
       </section>
     </>

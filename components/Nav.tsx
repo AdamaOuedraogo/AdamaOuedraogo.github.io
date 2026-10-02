@@ -10,11 +10,14 @@ export function Nav() {
             {site.name}
           </span>
           <span className="hidden font-mono text-[10px] uppercase tracking-[0.2em] text-accent sm:inline">
-            / Agentic Quality
+            / QA Engineering
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-5 md:flex">
+        <nav
+          aria-label="Main navigation"
+          className="hidden items-center gap-5 md:flex"
+        >
           {nav.map((item) => (
             <Link
               key={item.href}
@@ -33,6 +36,20 @@ export function Nav() {
           Work with me
         </Link>
       </div>
+      <nav
+        aria-label="Mobile navigation"
+        className="container-page flex flex-wrap gap-x-5 gap-y-2 pb-3 md:hidden"
+      >
+        {nav.map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            className="text-sm text-ink-soft hover:text-accent"
+          >
+            {item.label}
+          </Link>
+        ))}
+      </nav>
     </header>
   );
 }

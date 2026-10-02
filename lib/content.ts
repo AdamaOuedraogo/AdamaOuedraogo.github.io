@@ -1,17 +1,4 @@
-/**
- * Content layer — the contract between the Lab and the Website.
- *
- * The Agentic Quality Lab PRODUCES markdown. `npm run sync` (in the lab repo)
- * writes normalized markdown + frontmatter into /content here. This module is
- * the only thing the site uses to READ that content. No CMS, markdown-first.
- *
- * Directory → collection:
- *   content/lab          → daily lab logs / missions
- *   content/posts        → published LinkedIn posts (build-in-public)
- *   content/notes        → knowledge base notes
- *   content/experiments  → QA + AI experiment write-ups
- *   content/projects     → open-source projects (hand-authored)
- */
+/** Markdown content reader. Historical entries preserve their original dates and wording. */
 
 import fs from "node:fs";
 import path from "node:path";
@@ -70,11 +57,6 @@ export function getDocs(collection: Collection): Doc[] {
 
 export function getDoc(collection: Collection, slug: string): Doc | undefined {
   return readCollection(collection).find((d) => d.slug === slug);
-}
-
-/** Latest N items across one collection — for home-page "latest from the lab". */
-export function getLatest(collection: Collection, n = 3): Doc[] {
-  return readCollection(collection).slice(0, n);
 }
 
 /** All slugs in a collection — for generateStaticParams. */
