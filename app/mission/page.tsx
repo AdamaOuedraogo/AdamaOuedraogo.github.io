@@ -37,10 +37,11 @@ export default function MissionPage() {
           </p>
           <h2>What I’m building now</h2>
           <p>
-            I am exploring AI-assisted testing through QA MCP Server, an
-            open-source project that gives AI assistants structured access to QA
-            tools and guidance. I use this work to learn, test ideas and share
-            practical findings.
+            I am building QA MCP Server, an open-source project that encodes QA
+            engineering judgment as reusable capabilities for AI assistants.
+            Flaky-test triage is one concrete example: classify failures,
+            explain the evidence and recommend repairs that preserve the value
+            of the tests.
           </p>
           <h2>Working together</h2>
           <p>

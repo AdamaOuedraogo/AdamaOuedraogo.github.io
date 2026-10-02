@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/ui";
 import { DocCard } from "@/components/DocCard";
@@ -21,9 +22,9 @@ export default function LearningPage() {
             <DocCard key={doc.slug} doc={doc} />
           ))}
         </div>
-        <a href="/knowledge" className="mt-6 inline-block link-underline">
+        <Link href="/knowledge" className="mt-6 inline-block link-underline">
           Read the notes →
-        </a>
+        </Link>
       </section>
     </>
   );

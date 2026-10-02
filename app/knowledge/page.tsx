@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/ui";
 import { DocCard } from "@/components/DocCard";
@@ -29,12 +30,12 @@ export default function KnowledgePage() {
           Earlier writing remains available with its original dates.
         </p>
         <div className="mt-4 flex gap-5">
-          <a href="/learning" className="link-underline">
+          <Link href="/learning" className="link-underline">
             Posts →
-          </a>
-          <a href="/lab" className="link-underline">
+          </Link>
+          <Link href="/lab" className="link-underline">
             Historical experiments →
-          </a>
+          </Link>
         </div>
       </section>
     </>

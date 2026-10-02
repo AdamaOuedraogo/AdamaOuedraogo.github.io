@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/ui";
 import { DocCard } from "@/components/DocCard";
@@ -15,7 +16,7 @@ export default function LabPage() {
       <PageHeader
         eyebrow="Archive"
         title="Historical experiments."
-        intro="The former lab name is retired. These entries preserve the original work and dates; they are not an active product or a promised publishing cadence."
+        intro="Earlier QA and AI experiments, preserved with their original dates. Follow QA MCP Server for current work."
       />
       <section className="container-page pb-12">
         <a href={ecosystem.qamcp.href} className="link-underline">
@@ -26,9 +27,9 @@ export default function LabPage() {
             <DocCard key={`${doc.collection}-${doc.slug}`} doc={doc} />
           ))}
         </div>
-        <a href="/knowledge" className="mt-6 inline-block link-underline">
+        <Link href="/knowledge" className="mt-6 inline-block link-underline">
           Notes →
-        </a>
+        </Link>
       </section>
     </>
   );

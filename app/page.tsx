@@ -20,17 +20,9 @@ export default function Home() {
               {site.shortBio}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <CTA href={ecosystem.qamcp.href} external>
+              <CTA href="/consulting">Discuss a mission</CTA>
+              <CTA href={ecosystem.qamcp.href} external variant="ghost">
                 Explore QA MCP Server ↗
-              </CTA>
-              <CTA href="/consulting" variant="ghost">
-                Discuss a mission
-              </CTA>
-              <CTA href={ecosystem.github.href} external variant="ghost">
-                GitHub ↗
-              </CTA>
-              <CTA href={ecosystem.linkedin.href} external variant="ghost">
-                LinkedIn ↗
               </CTA>
             </div>
             <p className="mt-6 text-sm text-ink-faint">{site.location}</p>

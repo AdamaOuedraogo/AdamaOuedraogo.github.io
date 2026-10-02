@@ -10,7 +10,9 @@ The canonical identity is maintained in the owner's private professional operati
 
 Use the owner's name as the brand. QA MCP Server is the flagship: QA engineering judgment encoded as reusable capabilities for AI assistants. Lead with concrete evidence, including flaky-test triage, and explain client outcomes in plain language. Playwright, Cypress, E2E automation, CI/CD and test reliability support the offer.
 
-Keep the presentation concise, with About, Projects, Notes and Consulting. Notes must list the actual Markdown notes. Preserve historical content and useful URLs, but identify legacy content as history. The former lab brand is retired; do not restore it as a current product or content pipeline.
+The owner approved the concise professional presentation on 2026-10-02: a short experience block is appropriate; empty Speaking and Newsletter surfaces are unnecessary. This changes presentation, not the Staff identity or flagship strategy.
+
+Keep the presentation concise, with About, Projects, Notes and Consulting. Put the mission contact action first and QA MCP Server second in the hero; keep social profile links in the footer. Notes must list the actual Markdown notes. Preserve historical content and useful URLs, but identify legacy content as history. The former lab brand is retired; do not restore it as a current product or content pipeline.
 
 ## Public/private boundary
 
