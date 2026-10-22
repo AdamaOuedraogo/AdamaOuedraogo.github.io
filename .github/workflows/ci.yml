@@ -1,0 +1,30 @@
+name: CI
+
+# Pull-request checks: types, static export and smoke checks on the output.
+# Deployment stays in deploy.yml and only runs on the production branch.
+
+on:
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - name: Build static export
+        run: npm run build
+        env:
+          STATIC_EXPORT: "true"
+      - run: npm run check
+      - run: git diff --check

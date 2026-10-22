@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { site, offers, ecosystem } from "@/lib/site";
+import { audit, site, offers, ecosystem } from "@/lib/site";
 import { CTA } from "@/components/ui";
 
 export default function Home() {
@@ -79,6 +79,14 @@ export default function Home() {
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">
                 {offer.body}
               </p>
+              {offer.title === "Quality engineering" && (
+                <Link
+                  href={audit.href}
+                  className="mt-3 inline-block link-underline text-sm"
+                >
+                  E2E Test Audit: 2 days, fixed price →
+                </Link>
+              )}
             </div>
           ))}
         </div>

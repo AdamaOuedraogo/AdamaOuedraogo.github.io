@@ -75,3 +75,16 @@ export const offers = [
     body: "Explore AI for test design and failure analysis, and connect assistants to testing tools through MCP. Keep review and decisions with the team.",
   },
 ] as const;
+
+/** Fixed-price packaged offer, linked from the home and consulting pages. */
+export const audit = {
+  title: "E2E Test Audit — 2 days, fixed price",
+  summary:
+    "Measured flakiness, root causes, the most expensive tests fixed in a pull request (typically 5 to 10), and an action plan your team can run on its own.",
+  price: "€1,200 excl. VAT",
+  href: "/consulting/e2e-audit",
+  // Pre-filled so a reply carries what is needed to qualify the request.
+  mailto: `mailto:${site.email}?subject=E2E%20Test%20Audit&body=${encodeURIComponent(
+    "Framework (Playwright or Cypress):\nNumber of E2E tests:\nCI (GitLab CI, GitHub Actions, other):\nMain difficulty today:\n",
+  )}`,
+} as const;
