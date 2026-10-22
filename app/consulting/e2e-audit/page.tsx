@@ -268,8 +268,9 @@ export default function AuditPage() {
             Is flaky E2E a problem right now?
           </h2>
           <p className="mt-3 max-w-prose text-ink-soft">
-            Email me with the size of your suite and your CI. I&apos;ll tell
-            you within a day whether the audit fits, or what would.
+            Email me with your framework, the size of your suite, your CI and
+            the main difficulty today. I&apos;ll tell you whether the audit
+            fits, or what would.
           </p>
           <div className="mt-6">
             <CTA href={audit.mailto} external>

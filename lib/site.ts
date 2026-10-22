@@ -83,5 +83,8 @@ export const audit = {
     "Measured flakiness, root causes, 5 to 10 tests fixed in a pull request, and an action plan your team can run on its own.",
   price: "€1,200 excl. VAT",
   href: "/consulting/e2e-audit",
-  mailto: `mailto:${site.email}?subject=E2E%20Test%20Audit`,
+  // Pre-filled so a reply carries what is needed to qualify the request.
+  mailto: `mailto:${site.email}?subject=E2E%20Test%20Audit&body=${encodeURIComponent(
+    "Framework (Playwright or Cypress):\nNumber of E2E tests:\nCI (GitLab CI, GitHub Actions, other):\nMain difficulty today:\n",
+  )}`,
 } as const;
