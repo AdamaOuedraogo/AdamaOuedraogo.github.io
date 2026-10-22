@@ -35,7 +35,10 @@ const scope = [
     "CI configuration: runners, retries, sharding, artifacts, run time",
     "Setting up a CI from scratch (separate 5-day offer)",
   ],
-  ["Fixes for the 5 to 10 most expensive tests", "Fixing the entire suite"],
+  [
+    "Fixes for the most expensive tests, typically 5 to 10, depending on failure reproducibility and fix complexity",
+    "Fixing the entire suite",
+  ],
 ];
 
 const steps = [
@@ -53,7 +56,7 @@ const steps = [
   },
   {
     when: "Day 2, morning",
-    body: "Fix: 5 to 10 of the most expensive tests, delivered as a pull request with every change explained.",
+    body: "Fix: the most expensive tests, typically 5 to 10, delivered as a pull request with every change explained.",
   },
   {
     when: "Day 2, afternoon",
@@ -70,7 +73,7 @@ const deliverables = [
   [
     "Fixes",
     "Pull request on your repository",
-    "5 to 10 tests fixed, one commit per root cause, rationale in the description",
+    "The most expensive tests fixed, typically 5 to 10, one commit per root cause, rationale in the description",
   ],
   [
     "Action plan",
@@ -87,9 +90,8 @@ const deliverables = [
 const terms = [
   "50% on order (€600 excl. VAT), 50% on delivery of the report. Payment on receipt, bank transfer.",
   "Quote and purchase order within 24 h; start possible within 5 business days of receiving the deposit and access.",
-  "If repository and CI access are not provided within 10 business days of the agreed date, the deposit is retained and a new date is set.",
+  "If repository and CI access are not provided within 10 business days of the agreed date, the audit may be rescheduled once at no additional cost. Rescheduling and cancellation conditions are defined in the signed quote.",
   "NDA signed on request before any access to code. Access is revoked on delivery.",
-  "Sole-trader status (micro-entreprise); VAT per the regime in force at invoicing date.",
 ];
 
 const prerequisites = [
@@ -185,7 +187,9 @@ export default function AuditPage() {
         </div>
         <p className="mt-5 max-w-prose text-sm leading-relaxed text-ink-soft">
           Suites above 500 tests, or several repositories: scope and price
-          agreed by quote before signing.
+          agreed by quote before signing. If the suite cannot be run, or CI
+          data is insufficient, the scope is adapted and agreed with you
+          before the audit continues.
         </p>
       </Section>
 
@@ -207,9 +211,9 @@ export default function AuditPage() {
           ))}
         </ol>
         <p className="mt-5 max-w-prose text-sm leading-relaxed text-ink-soft">
-          Both days are consecutive or less than a week apart. Everything is
-          remote; one on-site day in Paris, Nantes or Bordeaux is possible at
-          no extra cost.
+          Both days are consecutive or less than a week apart. The audit is
+          delivered 100% remotely. Any exceptional on-site intervention
+          requires a separate agreement and quotation.
         </p>
       </Section>
 

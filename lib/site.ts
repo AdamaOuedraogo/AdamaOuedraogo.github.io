@@ -80,7 +80,7 @@ export const offers = [
 export const audit = {
   title: "E2E Test Audit — 2 days, fixed price",
   summary:
-    "Measured flakiness, root causes, 5 to 10 tests fixed in a pull request, and an action plan your team can run on its own.",
+    "Measured flakiness, root causes, the most expensive tests fixed in a pull request (typically 5 to 10), and an action plan your team can run on its own.",
   price: "€1,200 excl. VAT",
   href: "/consulting/e2e-audit",
   // Pre-filled so a reply carries what is needed to qualify the request.
