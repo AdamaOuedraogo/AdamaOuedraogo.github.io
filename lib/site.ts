@@ -75,3 +75,13 @@ export const offers = [
     body: "Explore AI for test design and failure analysis, and connect assistants to testing tools through MCP. Keep review and decisions with the team.",
   },
 ] as const;
+
+/** Fixed-price packaged offer, linked from the home and consulting pages. */
+export const audit = {
+  title: "E2E Test Audit — 2 days, fixed price",
+  summary:
+    "Measured flakiness, root causes, 5 to 10 tests fixed in a pull request, and an action plan your team can run on its own.",
+  price: "€1,200 excl. VAT",
+  href: "/consulting/e2e-audit",
+  mailto: `mailto:${site.email}?subject=E2E%20Test%20Audit`,
+} as const;
