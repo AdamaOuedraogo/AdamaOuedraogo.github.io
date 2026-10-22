@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PageHeader, Card, CTA } from "@/components/ui";
-import { offers, ecosystem, site } from "@/lib/site";
+import { audit, offers, ecosystem, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Consulting",
@@ -45,6 +46,29 @@ export default function ConsultingPage() {
               </p>
             </Card>
           ))}
+        </div>
+      </section>
+
+      <section className="container-page pb-12" aria-labelledby="offer-title">
+        <p className="eyebrow">Packaged offer</p>
+        <div className="mt-6 rounded-2xl border border-accent/30 p-6 md:flex md:items-start md:justify-between md:gap-8">
+          <div>
+            <h2 id="offer-title" className="text-xl font-semibold">
+              {audit.title}
+            </h2>
+            <p className="mt-2 max-w-prose text-sm leading-relaxed text-ink-soft">
+              {audit.summary}
+            </p>
+          </div>
+          <div className="mt-4 shrink-0 md:mt-0 md:text-right">
+            <p className="font-semibold text-ink">{audit.price}</p>
+            <Link
+              href={audit.href}
+              className="mt-2 inline-block link-underline text-sm"
+            >
+              See the offer →
+            </Link>
+          </div>
         </div>
       </section>
 
