@@ -26,6 +26,62 @@ export function PageHeader({
   );
 }
 
+/**
+ * Data table that stays readable on small screens: a regular table from `md`
+ * up, and one stacked block per row below, with the column name repeated
+ * above each cell.
+ */
+export function Table({
+  columns,
+  rows,
+  caption,
+}: {
+  columns: string[];
+  rows: React.ReactNode[][];
+  caption: string;
+}) {
+  return (
+    <table className="w-full border-t border-ink-faint/15 text-sm">
+      <caption className="sr-only">{caption}</caption>
+      <thead className="hidden md:table-header-group">
+        <tr>
+          {columns.map((col) => (
+            <th
+              key={col}
+              scope="col"
+              className="py-3 pr-4 text-left font-mono text-[11px] font-medium uppercase tracking-wider text-ink-faint"
+            >
+              {col}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody className="block md:table-row-group">
+        {rows.map((row, i) => (
+          <tr
+            key={i}
+            className="block border-b border-ink-faint/15 py-3 md:table-row md:py-0"
+          >
+            {row.map((cell, j) => (
+              <td
+                key={j}
+                data-label={columns[j]}
+                className={clsx(
+                  "block py-1 pr-4 align-top leading-relaxed md:table-cell md:border-b md:border-ink-faint/15 md:py-3",
+                  "before:block before:font-mono before:text-[11px] before:uppercase before:tracking-wider before:text-ink-faint before:content-[attr(data-label)] md:before:hidden",
+                  j === 0 ? "font-medium text-ink" : "text-ink-soft",
+                )}
+              >
+                {cell}
+              </td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
 export function Tag({ children }: { children: React.ReactNode }) {
   return (
     <span className="rounded-full border border-ink-faint/25 px-2.5 py-0.5 font-mono text-[11px] text-ink-soft">
